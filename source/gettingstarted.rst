@@ -93,12 +93,12 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 
 遇到下图这样需要在分号处进行分割的片段，将光标定位到分号前，按Enter键进行分割。
 
-.. image:: /images/merge_segments_hidden_tags.png
+.. image:: /images/split_segments.png
 
 设置不可译片段
-+++++++++++++
++++++++++++++++
 
-英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可以片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit-Mark the current segment as non-translatble进行设置。
+英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit-Mark the current segment as non-translatble进行设置。
 
 .. image:: /images/mark_translateble.png
 
@@ -116,3 +116,24 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 含有备注的片段的译文编辑框会显示一圈绿色。
 
 .. image:: /images/segment_with_note.png
+
+查看项目统计信息
+--------------------
+
+点击项目区的Statistics，可以显示项目的统计信息，比如原文字数、译文字数和完成的百分比等。
+
+.. image:: /images/statistics.png
+
+查看预览
+--------------------
+
+点击项目区的Preview，可以对翻译的内容进行预览。已经翻译的部分会用译文进行替代。
+
+.. image:: /images/preview.png
+
+生成目标文件
+-------------------
+
+翻译结束后，点击菜单File->Generate target files，即可在项目的target文件夹里生成目标文件。
+
+.. image:: /images/generate.png
