@@ -32,7 +32,7 @@
 
 .. image:: /images/fuzzy_match.png
 
-翻译记忆的匹配率可以在点击菜单栏Project->Project Settings进行设置。匹配率须在0.5到1.0之间。
+翻译记忆的匹配率可以点击菜单栏Project->Project Settings进行设置。匹配率须在0.5到1.0之间。
 
 .. image:: /images/fuzzy_match_setting.png
 
@@ -73,3 +73,46 @@ BasicCAT的翻译记忆库分为项目记忆库和外部记忆库。项目记忆
 
 片段操作
 -------------
+
+BasicCAT利用SRX分割标准对原文进行分割。片段多为一个句子或者一个单独成段的短语。
+
+片段合并与分割
++++++++++++++++++
+
+遇到下图这样的人名分割错误的情况，我们可以点击原文的末尾，然后按Delete键进行句段合并操作。
+
+.. image:: /images/merge_segments.png
+
+如果句段属于不同的文件或者翻译单元，将不能进行合并。word中的不同段落，indesign中不同的story文件都属于这种情况。
+
+.. image:: /images/merge_segments_different_transunits.png
+
+BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的片段带标签，也会进行提示。此时可以选择继续进行合并，但可能会显示出较为复杂的标签。
+
+.. image:: /images/merge_segments_hidden_tags.png
+
+遇到下图这样需要在分号处进行分割的片段，将光标定位到分号前，按Enter键进行分割。
+
+.. image:: /images/merge_segments_hidden_tags.png
+
+设置不可译片段
++++++++++++++
+
+英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可以片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit-Mark the current segment as non-translatble进行设置。
+
+.. image:: /images/mark_translateble.png
+
+设置不可译的片段的编辑区会变成灰色不可用状态。
+
+.. image:: /images/mark_translateble_example.png
+
+添加备注
++++++++++++++
+
+翻译中碰到较难的句子，可以进行备注，记录为什么这样翻。点击菜单栏Edit-Show/Edit notes of the current segment进行查看或修改操作。
+
+.. image:: /images/note_edit.png
+
+含有备注的片段的译文编辑框会显示一圈绿色。
+
+.. image:: /images/segment_with_note.png
