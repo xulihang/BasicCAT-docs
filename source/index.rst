@@ -12,4 +12,8 @@ BasicCAT 使用手册
 
    intro.rst
    gettingstarted.rst
+   advancedFeatures.rst
+   translatingFiles.rst
+   otherSettings.rst
+   fordevelopers.rst
 
