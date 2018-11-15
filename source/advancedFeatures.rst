@@ -136,6 +136,31 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 .. image:: /images/autocorrect.png
 
+导出Word以供审校
+-----------------------
+
+BasicCAT支持导出翻译的内容至Word中，利用Word的审校功能进行审校。
+
+在所需导出的文件上右键，点击Export to docx for review，可以导出docx文件。
+
+.. image:: /images/export_review.png
+
+.. image:: /images/word_review.png
+
+完成审校后，可以从Word文件将修改结果导回。在文件名上右键，点击Import form review。
+
+.. image:: /images/import_review.png
+
+你可以一条一条地重新确认，也可以直接用审校的内容替换原来的翻译。
+
+.. image:: /images/review_confirm.png
+
+导出双语对照文本
+-------------------
+
+在所需导出的文件上右键，点击Export to bi-paragraphs，可以导出双语段落对照文本。
+
+.. image:: /images/exported-bitext.png
 
 搜索与替换
 ---------------
