@@ -121,7 +121,7 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 .. image:: /images/quickfill.png
 
-快速填充的设置需要点击菜单Project-Project Settings，切换到Quickfill栏目。
+快速填充的设置需要点击菜单Project->Project Settings，切换到Quickfill栏目。
 
 .. image:: /images/quickfill_setting.png
 
@@ -132,7 +132,7 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 .. image:: /images/autocorrect.gif
 
-点击菜单Project-Project Settings，切换到AutoCorrect栏目进行设置。
+点击菜单Project->Project Settings，切换到AutoCorrect栏目进行设置。
 
 .. image:: /images/autocorrect.png
 
@@ -165,7 +165,7 @@ BasicCAT支持导出翻译的内容至Word中，利用Word的审校功能进行�
 搜索与替换
 ---------------
 
-点击菜单Edit-Search and Replace进入搜索与替换对话框，可以检索原文和译文的内容。支持使用正则表达式。
+点击菜单Edit->Search and Replace进入搜索与替换对话框，可以检索原文和译文的内容。支持使用正则表达式。
 
 下面是利用正则表达式将英文引号替换成中文引号的例子。
 

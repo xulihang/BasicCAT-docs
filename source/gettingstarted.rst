@@ -41,7 +41,7 @@
 
 BasicCAT的翻译记忆库分为项目记忆库和外部记忆库。项目记忆库存储项目文件的翻译记忆，而外部记忆库显示外部导入的翻译记忆。
 
-点击菜单栏Project-Project Settings，选中TM一栏设置可以进行外部翻译记忆的管理。
+点击菜单栏Project->Project Settings，选中TM一栏设置可以进行外部翻译记忆的管理。
 
 支持导入TMX格式和Tab分割的txt文件，txt文件要求原文在前，译文在后，以tab进行分割。添加文件时会显示一个预览窗口，便于检验导入的内容是否正确。
 
@@ -103,7 +103,7 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 设置不可译片段
 +++++++++++++++
 
-英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit-Mark the current segment as non-translatble进行设置。
+英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark the current segment as non-translatble进行设置。
 
 .. image:: /images/mark_translateble.png
 
@@ -114,7 +114,7 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 添加备注
 +++++++++++++
 
-翻译中碰到较难的句子，可以进行备注，记录为什么这样翻。点击菜单栏Edit-Show/Edit notes of the current segment进行查看或修改操作。
+翻译中碰到较难的句子，可以进行备注，记录为什么这样翻。点击菜单栏Edit->Show/Edit notes of the current segment进行查看或修改操作。
 
 .. image:: /images/note_edit.png
 
