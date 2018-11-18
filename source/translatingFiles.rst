@@ -195,5 +195,80 @@ msgctxt后面是上下文信息，msgid存储原文内容，msgstr存储译文�
 
 .. image:: /images/po_segments.png
 
+
+PDF文件
+--------------------------------
+
+PDF文件是较难处理的格式，可以用Word、ABBYY、Solid Document Converter等工具将其转换为Word，但原来的格式往往不能得到很好的保留。用Adobe Acrobat可以修改文字，但有诸多限制。
+
+PDF文件往往是由另一种格式的文件生成的，比如docx、idml等，如果能找到源文件是最好的。如果要求保留格式却又没有源文件，只能翻译后试着重新排版。
+
+在出版社翻译InDesign文件，一般交给译员一个PDF文档，译员将译文排版成一个Word，然后交给排版人员在InDesign中进行替换。这时，我们需要做的就是提取PDF的文字进行翻译。
+
+BasicCAT自带了PDF转文字的工具，可以通过菜单栏Tools->PDF2TXT打开。如果PDF的文字可以提取，那可以直接提取出来。如果不行，便使用开源的OCR软件tesseract进行识别。
+
+工具支持添加页码信息，还可以针对InDesign生成的对页进行处理。
+
+.. image:: /images/pdf2txt.png
+
+PDF中的文字是没有段落信息的，所以默认提取出来的每行文字后面都有回车，PDF2TXT提供一个reflow功能，可以自动去除多余的回车。
+
+关于tesseract的安装，Windows可以 `在此 <https://pan.baidu.com/s/1Pij20PPfVLUqXcBGc4ueSg>`_ 下载一份程序，运行PDF2TXT时会提示设置tesseract的路径，选择即可。
+
+Linux和macOS(homebrew)用户可以直接安装tesseract-ocr这个包，并下载对应语言的模型文件。
+
 利用Okapi翻译其它格式文件
 -----------------------------
+
+`Okapi <http://okapiframework.org/>`_ 是一套开源跨平台的翻译组件。有用于检查译文质量的checkmate、修改句段分割规则的Ratel，还有用于执行各种翻译与本地化任务的Rainbow。
+
+要翻译其它格式文件，我们主要需要使用Rainbow。
+
+1. 从源文件生成xliff或者po文件
+
+打开Rainbow，把要翻译的源文件拖拽进去。
+
+.. image:: /images/rainbow_addfile.png
+
+进行原文和译文、文件编码等设置。
+
+.. image:: /images/rainbow_setting.png
+
+点击菜单Utilities->Translation Kit Creation，选择要生成xliff、po还是其它中间格式，选择生成的目标位置（默认为源文件所在目录）。
+
+.. image:: /images/rainbow_creation.png
+
+点击执行后，在目标位置会生成一个pack1文件夹，里面的work文件夹存放了生成的xliff等格式文件。
+
+2. 从生成的项目导出目标文件
+
+翻译完成后，把xliff等格式文件放回work文件夹。然后添加manifest.rkm到Rainbow中。
+
+.. image:: /images/rainbow_addrkm.png
+
+点击菜单Utilities->Translation Kit Post-processing，可以生成目标文件。
+
+`在此 <http://okapiframework.org/wiki/index.php?title=Filters>`_ 查看Okapi支持的文件格式。
+
+利用Felix翻译Word文件
+------------------------------
+
+BasicCAT并没有直接支持Word文档，但可以通过okapi将word转换为xliff来进行翻译。
+
+另一种方式则是使用Felix CAT。Felix是微软Office上运行的一套宏，可以在Word中利用翻译记忆完成翻译，一切操作都在Word中进行。
+
+关于felix的操作，可以访问 `官网 <http://felix-cat.com/>`_ 或者阅读这篇文章：`在Office里运行的CAT软件<http://blog.xulihang.me/CAT-Tools-work-with-microsoft-office/>`_ 。
+
+下面讲讲如何利用BasicCAT翻译docx的文本，然后利用felix进行回填。
+
+1. 将Word转存为TXT，导入BasicCAT中翻译。
+2. BasicCAT里翻译好后导出翻译记忆，导入Felix。
+3. 通过Word的Felix加载项操作界面进入Felix的设置界面，取消勾选Format标签下的勾选框，这样替换纯文本的翻译记忆时，不会修改原文的格式。
+
+.. image:: /images/felix_menu.png
+
+.. image:: /images/felix_format.png
+
+4. 利用Alt+G快捷键，可以快速地进行译文的替换。
+
+.. image:: /images/felix.png
