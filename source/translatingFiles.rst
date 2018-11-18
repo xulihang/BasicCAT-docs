@@ -257,7 +257,7 @@ BasicCAT并没有直接支持Word文档，但可以通过okapi将word转换为xl
 
 另一种方式则是使用Felix CAT。Felix是微软Office上运行的一套宏，可以在Word中利用翻译记忆完成翻译，一切操作都在Word中进行。
 
-关于felix的操作，可以访问 `官网 <http://felix-cat.com/>`_ 或者阅读这篇文章：`在Office里运行的CAT软件<http://blog.xulihang.me/CAT-Tools-work-with-microsoft-office/>`_ 。
+关于felix的操作，可以访问\ `官网 <http://felix-cat.com/>`_\ 或者阅读这篇文章：`在Office里运行的CAT软件 <http://blog.xulihang.me/CAT-Tools-work-with-microsoft-office/>`_ 。
 
 下面讲讲如何利用BasicCAT翻译docx的文本，然后利用felix进行回填。
 

@@ -15,5 +15,5 @@ BasicCAT 使用手册
    advancedFeatures.rst
    translatingFiles.rst
    otherSettings.rst
-   fordevelopers.rst
+   howtocontribute.rst
 
