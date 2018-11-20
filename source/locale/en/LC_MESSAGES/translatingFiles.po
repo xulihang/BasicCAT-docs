@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/translatingFiles.rst:2
+msgid "翻译各种格式的文件"
+msgstr "Translating All Kinds of Files"
+
+
+#: ../../source/translatingFiles.rst:5
+msgid "纯文本文件"
+msgstr "TXT Files"
+
+
+#: ../../source/translatingFiles.rst:7
+msgid "txt纯文本文件没有额外的标签信息，所有片段都支持合并与拆分。"
+msgstr "TXT files are pure text files. There are no extra tags and all the segments can be merged and splited."
+
+
+#: ../../source/translatingFiles.rst:10
+msgid "IDML文件"
+msgstr "IDML Files"
+
+
+#: ../../source/translatingFiles.rst:12
+msgid ""
+"IDML是Adobe "
+"InDesign使用的基于XML的文件格式。最新版的InDesign生成的文件要想给老版本的InDesign打开，往往便要使用IDML格式。一般InDesign的文件都保存为indd。indd是专有格式，不能被第三方软件进行解析，所以要翻译InDesign文件需要先将其转换为IDML文件。"
+msgstr "IDML is an XML based file format used by Adobe InDesign. Documents made by the latest version of InDesign have to be converted to IDML for use in old versions of InDesign. InDesign's default file format is indd, which is a proprietary format. It cannot be opened by third-party applications.  In order to translate InDesign documents, Indd files have to be converted to IDML files."
+
+
+#: ../../source/translatingFiles.rst:14
+msgid "IDML其实是一个zip压缩文件，里面的文件结构如下："
+msgstr "An IDML file is a compressed file in nature. Its structure is as follows."
+
+
+#: ../../source/translatingFiles.rst:45
+msgid "我们要关注的主要是designmap.xml文件、Spreads文件夹、Stories文件夹和Resources文件夹的内容。"
+msgstr "What relevant to us are designmap.xml, spreads folder, stories folder and resources folder."
+
+
+#: ../../source/translatingFiles.rst:47
+msgid "designmap.xml是整个文件的大纲，spread文件是每个页面的结构，story文件则是spread里文本框存储的文本。Fonts.xml保存了字体信息，Styles.xml保存了样式信息。"
+msgstr "designmap.xml defines the document's basic structure. A spread file includes the structure of one page or facing pages. A story file contains the text shown in a textframe. Fonts.xml stores font info and Styles.xml stores styles info."
+
+
+#: ../../source/translatingFiles.rst:49
+msgid "BasicCAT分别读取designmap.xml文件和Spreads文件，获得story文件在原文中的显示顺序，然后对其文本进行提取。"
+msgstr "BasicCAT reads designmap.xml and spreads files to get the order of stories shown in the document and extracts texts from story files."
+
+
+#: ../../source/translatingFiles.rst:51
+msgid "下面是一个Story文件的内容："
+msgstr "Below is what a story file looks like:"
+
+
+#: ../../source/translatingFiles.rst:83
+msgid "段落信息保存在ParagraphStyleRange这个标签里，一个ParagraphStyleRange标签可以包含很多CharacterStyleRange标签，里面是具体的文本。IDML文件中的样式分为全局样式和本地样式，全局样式存储在styles.xml文件中，story文件通过AppliedParagraphStyle和AppliedCharacterStyle保存对应的全局样式名，而本地样式被定义在属性和Properties元素里，比如PointSize、FontStyle等。"
+msgstr "Paragraph info is stored in the ParagraphStyleRange tag. One ParagraphStyleRange tag can include many CharacterStyleRange tags which include texts. There are two types of style in IDML. One is global style and the other is local style.  Global styles are stored in Styles.xml. Story files use AppliedParagraphStyle and AppliedCharacterStyle attributes to mark global styles. Local styles are defined in the attributes and the properties element in story files, like PointSize and FontStyle."
+
+
+#: ../../source/translatingFiles.rst:85
+msgid "上面的story文件，BasicCAT将其转换为以下带标签的文本。"
+msgstr "BasicCAT will convert the story file above into the tagged text below."
+
+
+#: ../../source/translatingFiles.rst:98
+msgid ""
+"上例中 ``p16`` ， ``c0`` 中的数字对应的styles.xml文件中某个全局样式的顺序。而 ``<c0 id=\"3\">`` "
+"中的id属性则是story中characterstylerange的顺序，用于生成目标文件时读取本地样式。c0对应的是默认的没有特殊格式的样式，所以BasicCAT在显示的原文中对其进行隐藏。另外段落标签和文本内容为非文本的标签也可以进行隐藏。"
+msgstr "The numbers in ``p16`` , ``c0``  correspond to the rank of some global  style in styles.xml. The id attribute of ``<c0 id=\"3\">`` corresponds to the rank of characterstylerange in a story file. The number is used to read local styles when generating target files. c0 is the default style that has no special formats. BasicCAT will hide it in the source text shown. Paragraph tags and tags without texts can also be hidden."
+
+
+#: ../../source/translatingFiles.rst:100
+msgid "最终，上述内容在BasicCAT中是这样显示的："
+msgstr "When the example story is opened by BasicCAT, the result looks like this:"
+
+
+#: ../../source/translatingFiles.rst:104
+msgid "其中c3标签对文字进行了加粗。英文字体一般有很多字重，比如特细、细、常规、粗等，而中文字体一般只有一种常规体。平时在Word里可以设置汉字的加粗是通过软件算法实现的，而IDML中是通过设置字重来实现的。所以，为了保证英译汉时，标签的效果在生成的译文中也有效，BasicCAT采用具有7种字重的思源宋体作为中文的显示字体，并将英文的字重转换为对应的思源宋体的字重。其对应关系如下："
+msgstr "c3 tag add bold font style to the text. English fonts often have many font weights, like Extra Light, Light, Normal and Heavy, while Chinese fonts often have only one regular font weight. The bold style of Chinese characters in word is achieved by software algorithm, but IDML uses font weight to do this. So, to assure that the tags will make effects for English to Chinese translation projects, BasicCAT uses Source Han Serif as IDML's Chinese font. Source Han Serif has 7 font weights. Font weight's names of English fonts will be converted to names in Source Han Serif as follows."
+
+
+#: ../../source/translatingFiles.rst:106
+msgid "100->ExtraLight"
+msgstr "100->ExtraLight"
+
+
+#: ../../source/translatingFiles.rst:107
+msgid "200->ExtraLight"
+msgstr "200->ExtraLight"
+
+
+#: ../../source/translatingFiles.rst:108
+msgid "300->Light"
+msgstr "300->Light"
+
+
+#: ../../source/translatingFiles.rst:109
+msgid "400->Regular"
+msgstr "400->Regular"
+
+
+#: ../../source/translatingFiles.rst:110
+msgid "500->Medium"
+msgstr "500->Medium"
+
+
+#: ../../source/translatingFiles.rst:111
+msgid "600->SemiBold"
+msgstr "600->SemiBold"
+
+
+#: ../../source/translatingFiles.rst:112
+msgid "700->Bold"
+msgstr "700->Bold"
+
+
+#: ../../source/translatingFiles.rst:113
+msgid "800->Heavy"
+msgstr "800->Heavy"
+
+
+#: ../../source/translatingFiles.rst:114
+msgid "900->Heavy"
+msgstr "900->Heavy"
+
+
+#: ../../source/translatingFiles.rst:115
+msgid "Normal->Regular"
+msgstr "Normal->Regular"
+
+
+#: ../../source/translatingFiles.rst:116
+msgid "Black->Heavy"
+msgstr "Black->Heavy"
+
+
+#: ../../source/translatingFiles.rst:118
+msgid "所以，为了在生成的idml文件中显示中文，需要安装思源宋体。"
+msgstr "So, you need to install Source Han Serif to display Chinese in InDesign."
+
+
+#: ../../source/translatingFiles.rst:120
+msgid ""
+"`点此下载思源宋体 <https://github.com/adobe-fonts/source-han-"
+"serif/releases/download/1.001R/SourceHanSerif.ttc>`_"
+msgstr "`Download Source Han Serif <https://github.com/adobe-fonts/source-han-serif/releases/download/1.001R/SourceHanSerif.ttc>`_"
+
+
+#: ../../source/translatingFiles.rst:122
+msgid "idml中的标签不是必须翻译的，如果不翻，BasicCAT会自动补充c0标签，保证译文不被忽略。"
+msgstr "Translation of tags in IDML is not necessary. If there is no corresponding tags in target texts, c0 tags will be filled to make sure the translation will not be omitted."
+
+
+#: ../../source/translatingFiles.rst:125
+msgid "XLIFF文件"
+msgstr "XLIFF Files"
+
+
+#: ../../source/translatingFiles.rst:127
+msgid "XLIFF是处理提取出来的待翻译文本的一种XML格式。CAT软件利用这一格式存储从docx、html、idml等格式文件提取出来的文本，翻译完成后再利用这一格式文件生成目标文件。"
+msgstr "XLIFF is an XML format for processing extracted text to be translated. CAT tools often use this format to store extracted text from files like docx, html and idml. When translation is done, CAT tools will generate target files based on XLIFF files."
+
+
+#: ../../source/translatingFiles.rst:129
+msgid "XLIFF是OASIS组织制定的标准，可以作为一种中间格式，在不同的翻译软件之间使用。"
+msgstr "XLIFF is a standard formulated by the OASIS organization and can be used as an intermediate format between different translation software."
+
+
+#: ../../source/translatingFiles.rst:131
+msgid "XLIFF利用继承自opentag的抽象占位符标签和继承自tmx的封装标签来表示特殊样式。"
+msgstr "XLIFF uses abstract placeholder tags inherited from opentag and encapsulating tags inherited from TMX to represent special formats."
+
+
+#: ../../source/translatingFiles.rst:133
+msgid "比如对于This is **bold**，在xliff中有两种表示方法。"
+msgstr "For example, there are two ways to represente "This is **bold**." in XLIFF."
+
+
+#: ../../source/translatingFiles.rst:135
+msgid "占位符标签："
+msgstr "Abstract placeholder:"
+
+
+#: ../../source/translatingFiles.rst:143
+msgid "封装标签："
+msgstr "Encapsulation:"
+
+
+#: ../../source/translatingFiles.rst:151
+msgid ""
+"抽象占位符标签的好处是针对不同格式，抽象出来的内容可以一样。比如html、rtf中表示加粗，html是 ``<b>`` ，而rtf中是 "
+"``\\b`` ，抽象之后都变成了g标签，而且显示的内容更少。但是抽象之后，原文标签中的含义也被隐去了。"
+msgstr "The placeholder way abstracts tags to its preset placeholder tags. To indicate bold, HTML uses ``<b>`` and RTF uses ``\\b``. They all become ``<g>`` in XLIFF. It also shows less tags info. But after this abstraction, we cannot tell what function this tag has."
+
+
+#: ../../source/translatingFiles.rst:153
+msgid "在BasicCAT中翻译xliff中带格式的内容时，会显示各种标签内容。标签内容如果不翻，生成的译文中会自动在结尾处补上缺失的标签，但有可能导致译文内容缺损。"
+msgstr "When translating XLIFF files, there will be tags in the source text. If tags are not put in the target text, BasicCAT will fill them at the end of target text. But this may result in incomplete content."
+
+
+#: ../../source/translatingFiles.rst:156
+msgid "标签内容如果不翻，生成的译文中会自动在结尾处补上缺失的标签，但有可能导致译文内容缺损。"
+msgstr "If tags are not put in the target text, BasicCAT will fill them at the end of target text. But this may result in incomplete content."
+
+
+#: ../../source/translatingFiles.rst:158
+msgid "以下是教程idml部分的范例文件用okapi提取出来的xliff文件的内容："
+msgstr "Below is the XLIFF extracted by okapi from the story file example in IDML part."
+
+
+#: ../../source/translatingFiles.rst:175
+msgid "上述内容在BasicCAT中是这样显示的，对片段中开头结尾处的成对标签或单个标签进行了隐藏："
+msgstr "When the XLIFF file is opened by BasicCAT, the result looks like below. Single tag and paired tags at both sides of the segment will be hidden."
+
+
+#: ../../source/translatingFiles.rst:180
+msgid "PO文件"
+msgstr "PO Files"
+
+
+#: ../../source/translatingFiles.rst:182
+msgid "PO是和xliff类似的一种格式，最初是GNU用来本地化C语言程序的。"
+msgstr "PO is a format similar to XLIFF. It is designed to localize C programs at first."
+
+
+#: ../../source/translatingFiles.rst:184
+msgid "以下是教程idml部分的范例文件用okapi提取出来的po文件的内容："
+msgstr "Below is PO content extracted by okapi from the example IDML story file."
+
+
+#: ../../source/translatingFiles.rst:192
+msgid "msgctxt后面是上下文信息，msgid存储原文内容，msgstr存储译文内容。okapi生成的PO也使用了标签来表示特殊样式。"
+msgstr "msgctxt stores context info. msgid stores the source text and msgstr stores the target text. PO files created by okapi also uses tags to represent formats."
+
+
+#: ../../source/translatingFiles.rst:194
+msgid "上述内容在BasicCAT中是这样显示的，和xliff一样，对片段中的开头结尾处的成对标签或单个标签进行了隐藏："
+msgstr "Below is how it looks when translating the PO file in BasicCAT. Like XLIFF, Single tag and paired tags at both sides of the segment will be hidden."
+
+
+#: ../../source/translatingFiles.rst:200
+msgid "PDF文件"
+msgstr "PDF Files"
+
+
+#: ../../source/translatingFiles.rst:202
+msgid ""
+"PDF文件是较难处理的格式，可以用Word、ABBYY、Solid Document "
+"Converter等工具将其转换为Word，但原来的格式往往不能得到很好的保留。用Adobe Acrobat可以修改文字，但有诸多限制。"
+msgstr "PDF file is a difficult format to process. It can be converted to docx by tools such as Word, ABBYY, Solid Document Converter, etc. But the original format can not be well preserved. Adobe Acrobat can be used to modify text, but there are many limitations."
+
+
+#: ../../source/translatingFiles.rst:204
+msgid "PDF文件往往是由另一种格式的文件生成的，比如docx、idml等，如果能找到源文件是最好的。如果要求保留格式却又没有源文件，只能翻译后试着重新排版。"
+msgstr "PDF files are often generated by files in another format, such as docx, idml, etc. It's better to handle the source file directly. If you want to preserve the formats but do not have the source file, you have first translate text and do desktop publishing from anew."
+
+
+#: ../../source/translatingFiles.rst:206
+msgid "在出版社翻译InDesign文件，一般交给译员一个PDF文档，译员将译文排版成一个Word，然后交给排版人员在InDesign中进行替换。这时，我们需要做的就是提取PDF的文字进行翻译。"
+msgstr "When translating InDesign documents, publishing houses often give the PDF document to the translator. The translator types the translation into a Word and then gives it to the typesetter to replace sources texts with target texts in InDesign. In such a case, what translators have to do is to extract the text from PDF."
+
+
+#: ../../source/translatingFiles.rst:208
+msgid "BasicCAT自带了PDF转文字的工具，可以通过菜单栏Tools->PDF2TXT打开。如果PDF的文字可以提取，那可以直接提取出来。如果不行，便使用开源的OCR软件tesseract进行识别。"
+msgstr "BasicCAT has a PDF to Text tool. It can be accessed by menu "Tools->PDF2TXT". If PDF's text can be extracted, it can be extracted directly by pressing the "strip" button. If not, the open source OCR software Tesseract will be used."
+
+
+#: ../../source/translatingFiles.rst:210
+msgid "工具支持添加页码信息，还可以针对InDesign生成的对页进行处理。"
+msgstr "You can add page number to the extracted text. It can also add facing pages number like Page 4-5."
+
+
+#: ../../source/translatingFiles.rst:214
+msgid "PDF中的文字是没有段落信息的，所以默认提取出来的每行文字后面都有回车，PDF2TXT提供一个reflow功能，可以自动去除多余的回车。"
+msgstr "Texts in PDF do not have paragraph info. They are just fixed dots in a page. The extracted text may have newline at the end of each line. PDF2TXT provides "reflow" function to remove extra newlines."
+
+
+#: ../../source/translatingFiles.rst:216
+msgid ""
+"关于tesseract的安装，Windows可以 `在此 "
+"<https://pan.baidu.com/s/1Pij20PPfVLUqXcBGc4ueSg>`_ "
+"下载一份程序，运行PDF2TXT时会提示设置tesseract的路径，选择即可。"
+msgstr "About the installation of tesseract, Windows users can download a copy from `here <https://pan.baidu.com/s/1Pij20PPfVLUqXcBGc4ueSg>`_\ . PDF2TXT will ask for the path to tessearct.exe."
+
+
+#: ../../source/translatingFiles.rst:218
+msgid "Linux和macOS(homebrew)用户可以直接安装tesseract-ocr这个包，并下载对应语言的模型文件。"
+msgstr "Linux and macOS(with homebrew) users can install tesseract-ocr directly. You may need to download extra language models."
+
+
+#: ../../source/translatingFiles.rst:221
+msgid "利用Okapi翻译其它格式文件"
+msgstr "Using Okapi to translate files in other formats"
+
+
+#: ../../source/translatingFiles.rst:223
+msgid ""
+"`Okapi <http://okapiframework.org/>`_ "
+"是一套开源跨平台的翻译组件。有用于检查译文质量的checkmate、修改句段分割规则的Ratel，还有用于执行各种翻译与本地化任务的Rainbow。"
+msgstr "`Okapi <http://okapiframework.org/>`_ is a set of translation components. It has Checkmate to check translation quality, Ratel to edit segmentation rule and Rainbow to do all kinds of translation and localization tasks."
+
+
+#: ../../source/translatingFiles.rst:225
+msgid "要翻译其它格式文件，我们主要需要使用Rainbow。"
+msgstr "To translate files in other formats, we need to use Rainbow."
+
+
+#: ../../source/translatingFiles.rst:227
+msgid "从源文件生成xliff或者po文件"
+msgstr "Create XLIFF or PO files from source files"
+
+
+#: ../../source/translatingFiles.rst:229
+msgid "打开Rainbow，把要翻译的源文件拖拽进去。"
+msgstr "Open Rainbow and drag source files into the window."
+
+
+#: ../../source/translatingFiles.rst:233
+msgid "进行原文和译文、文件编码等设置。"
+msgstr "Set the source language, target languages, file encoding, etc."
+
+
+#: ../../source/translatingFiles.rst:237
+msgid ""
+"点击菜单Utilities->Translation Kit "
+"Creation，选择要生成xliff、po还是其它中间格式，选择生成的目标位置（默认为源文件所在目录）。"
+msgstr "Click menu "Utilities->Translation Kit Creation". You can choose to generate XLIFF, PO or other intermediate formats. The default output path is the source files' folder."
+
+
+#: ../../source/translatingFiles.rst:241
+msgid "点击执行后，在目标位置会生成一个pack1文件夹，里面的work文件夹存放了生成的xliff等格式文件。"
+msgstr "After the execution is done, there will be a folder named pack1 in the output path. In the work folder are generated files."
+
+
+#: ../../source/translatingFiles.rst:243
+msgid "从生成的项目导出目标文件"
+msgstr "Generate target files from the previously created okapi project"
+
+
+#: ../../source/translatingFiles.rst:245
+msgid "翻译完成后，把xliff等格式文件放回work文件夹。然后添加manifest.rkm到Rainbow中。"
+msgstr "翻译完成后，把xliff等格式文件放回work文件夹。 "
+
+
+#: ../../source/translatingFiles.rst:249
+msgid "点击菜单Utilities->Translation Kit Post-processing，可以生成目标文件。"
+msgstr "点击菜单Utilities->Translation Kit Post-processing，可以生成目标文件。"
+
+
+#: ../../source/translatingFiles.rst:251
+msgid ""
+"`在此 <http://okapiframework.org/wiki/index.php?title=Filters>`_ "
+"查看Okapi支持的文件格式。"
+msgstr "   "
+
+
+#: ../../source/translatingFiles.rst:254
+msgid "利用Felix翻译Word文件"
+msgstr "利用Felix翻译Word文件"
+
+
+#: ../../source/translatingFiles.rst:256
+msgid "BasicCAT并没有直接支持Word文档，但可以通过okapi将word转换为xliff来进行翻译。"
+msgstr "BasicCAT并没有直接支持Word文档，但可以通过okapi将word转换为xliff来进行翻译。"
+
+
+#: ../../source/translatingFiles.rst:258
+msgid "另一种方式则是使用Felix CAT。Felix是微软Office上运行的一套宏，可以在Word中利用翻译记忆完成翻译，一切操作都在Word中进行。"
+msgstr "另一种方式则是使用Felix CAT。Felix是微软Office上运行的一套宏，可以在Word中利用翻译记忆完成翻译，一切操作都在Word中进行。"
+
+
+#: ../../source/translatingFiles.rst:260
+msgid ""
+"关于felix的操作，可以访问\\ `官网 <http://felix-cat.com/>`_\\ "
+"或者阅读这篇文章：`在Office里运行的CAT软件 <http://blog.xulihang.me/CAT-Tools-work-with-"
+"microsoft-office/>`_ 。"
+msgstr "  "
+
+
+#: ../../source/translatingFiles.rst:262
+msgid "下面讲讲如何利用BasicCAT翻译docx的文本，然后利用felix进行回填。"
+msgstr "下面讲讲如何利用BasicCAT翻译docx的文本，然后利用felix进行回填。"
+
+
+#: ../../source/translatingFiles.rst:264
+msgid "将Word转存为TXT，导入BasicCAT中翻译。"
+msgstr "将Word转存为TXT，导入BasicCAT中翻译。"
+
+
+#: ../../source/translatingFiles.rst:265
+msgid "BasicCAT里翻译好后导出翻译记忆，导入Felix。"
+msgstr "BasicCAT里翻译好后导出翻译记忆，导入Felix。"
+
+
+#: ../../source/translatingFiles.rst:266
+msgid "通过Word的Felix加载项操作界面进入Felix的设置界面，取消勾选Format标签下的勾选框，这样替换纯文本的翻译记忆时，不会修改原文的格式。"
+msgstr "通过Word的Felix加载项操作界面进入Felix的设置界面，取消勾选Format标签下的勾选框，这样替换纯文本的翻译记忆时，不会修改原文的格式。"
+
+
+#: ../../source/translatingFiles.rst:272
+msgid "利用Alt+G快捷键，可以快速地进行译文的替换。"
+msgstr "利用Alt+G快捷键，可以快速地进行译文的替换。"
+
+

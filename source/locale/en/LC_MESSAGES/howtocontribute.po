@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/howtocontribute.rst:2
+msgid "帮助BasicCAT项目发展"
+msgstr "帮助BasicCAT项目发展"
+
+
+#: ../../source/howtocontribute.rst:4
+msgid ""
+"`BasicCAT <https://github.com/xulihang/BasicCAT/>`_ "
+"是遵循GPLv2协议的开源项目，欢迎大家为项目做贡献。"
+msgstr "`BasicCAT <https://github.com/xulihang/BasicCAT/>`_ 是遵循GPLv2协议的开源项目，欢迎大家为项目做贡献。"
+
+
+#: ../../source/howtocontribute.rst:6
+msgid "如果您会开发软件，可以帮助开发插件、修改项目代码。"
+msgstr "如果您会开发软件，可以帮助开发插件、修改项目代码。"
+
+
+#: ../../source/howtocontribute.rst:8
+msgid "如果您在使用过程中碰到问题，或者有什么建议，欢迎在项目的github页面提交issues。"
+msgstr "如果您在使用过程中碰到问题，或者有什么建议，欢迎在项目的github页面提交issues。"
+
+
+#: ../../source/howtocontribute.rst:10
+msgid "如果您会翻译，可以帮助翻译网站、文档以及程序的界面，同样通过提交issues来提交请求。"
+msgstr "如果您会翻译，可以帮助翻译网站、文档以及程序的界面，同样通过提交issues来提交请求。"
+
+

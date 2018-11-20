@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/gettingstarted.rst:2
+msgid "快速入门"
+msgstr "Getting Started"
+
+
+#: ../../source/gettingstarted.rst:5
+msgid "新建项目"
+msgstr "New Project"
+
+
+#: ../../source/gettingstarted.rst:7
+msgid "菜单栏点击File->New，选择建立英译汉(en to zh)或者汉译英(zh to en)项目，会自动生成翻译记忆库和术语库等项目文件。"
+msgstr "Click "File"->"New", choose "en to zh" to create English to Chinese projects and "zh to en" to create Chinese to English projects.  Translation Memory and Term Base will be created at the same time."
+
+
+#: ../../source/gettingstarted.rst:11
+msgid "新建项目后要进一步操作需要先保存项目。"
+msgstr "Save the project before further operations."
+
+
+#: ../../source/gettingstarted.rst:14
+msgid "添加文件"
+msgstr "Add File"
+
+
+#: ../../source/gettingstarted.rst:16
+msgid "打开项目后在左侧会显示一列项目，可以操作项目文件、翻译记忆、术语库，查看统计信息和预览。"
+msgstr "When a project is opened, a list of item will show in the left area. You can manage project files, translation memory, term base, view statistics and preview."
+
+
+#: ../../source/gettingstarted.rst:20
+msgid "我们在Project Files上右键，可以添加文件。"
+msgstr "Right click "Project Files" to add files."
+
+
+#: ../../source/gettingstarted.rst:24
+msgid "添加文件后点击文件名，可以打开该文件进行翻译，并进入下图的界面。每个功能分区都已在图中标出。在原文右边的编辑框中输入文字即可开始翻译，一个片段完成后按回车切换到下一片段。"
+msgstr "Click filenames to open files. The interface will look like this when a file is opened. Every function area is marked out in the picture. Input your translation in the right textarea. After one segment's translation is done, press "Enter" to go to the next one."
+
+
+#: ../../source/gettingstarted.rst:29
+msgid "翻译记忆"
+msgstr "Translation Memory"
+
+
+#: ../../source/gettingstarted.rst:31
+msgid "片段翻译完成后按回车，该条翻译的内容就会自动加入翻译记忆库。在遇到相似的片段时，便会在下方显示。点击该条结果即可将译文填充进译文输入框。"
+msgstr "After you press "Enter" to finish one segment, the translation will be added to the translation memory. When translating a similar segment, it will appear in the lower area. Click that match to fill the translation into the textarea."
+
+
+#: ../../source/gettingstarted.rst:35
+msgid "翻译记忆的匹配率可以点击菜单栏Project->Project Settings进行设置。匹配率须在0.5到1.0之间。"
+msgstr "Translation memory's match rate can be set in Project Settings. The rate should be between 0.5 to 1.0."
+
+
+#: ../../source/gettingstarted.rst:40
+msgid "添加外部翻译记忆"
+msgstr "Add External Translation Memory"
+
+
+#: ../../source/gettingstarted.rst:42
+msgid "BasicCAT的翻译记忆库分为项目记忆库和外部记忆库。项目记忆库存储项目文件的翻译记忆，而外部记忆库显示外部导入的翻译记忆。"
+msgstr "There are two types of translation memory in BasicCAT. One is project memory and one is external memory. Project memory stores memories created when translating the project's files, while external memory show imported translation memory."
+
+
+#: ../../source/gettingstarted.rst:44
+msgid "点击菜单栏Project->Project Settings，选中TM一栏设置可以进行外部翻译记忆的管理。"
+msgstr "Click "Project->Project Settings", and in the "TM" page, you can manage external translation memory."
+
+
+#: ../../source/gettingstarted.rst:46
+msgid "支持导入TMX格式和Tab分割的txt文件，txt文件要求原文在前，译文在后，以tab进行分割。添加文件时会显示一个预览窗口，便于检验导入的内容是否正确。"
+msgstr "You can import TMX files or tab-delimited txt files. For txt files, the source should be in the first row and the target should be in the second.  A preview window will appear when you add a new file."
+
+
+#: ../../source/gettingstarted.rst:52
+msgid "模糊匹配到外部记忆库的片段时，会在下方显示，并显示来自哪个记忆库文件。翻译记忆中的原文、当前要翻译的原文和翻译记忆中的译文会在差异显示区显示。"
+msgstr "When a segment from external translation memory is matched, a filename will show to indicate where that match comes from. The source text in the translation memory, the source text of the current segment and the target text in the translation memory will show in the differences display area."
+
+
+#: ../../source/gettingstarted.rst:57
+msgid "管理翻译记忆"
+msgstr "Manage Translation Memory"
+
+
+#: ../../source/gettingstarted.rst:59
+msgid "点击项目区的Translation Memory可以对翻译记忆进行检索，并进行导出、修改和删除等操作。"
+msgstr "Click "Translation Memory" in the Project area to open TM Manager. You can search, export, edit or remove translation memories."
+
+
+#: ../../source/gettingstarted.rst:64
+msgid "术语管理"
+msgstr "Terminology Management"
+
+
+#: ../../source/gettingstarted.rst:66
+msgid ""
+"在翻译过程中遇到术语，可以在原文和译文中选中对应的文本，然后点击术语区的Add "
+"Term添加术语。BasicCAT利用opennlp自然语言处理工具对词型进行还原，避免保存的是词语的复数形式而匹配不到词语的单数形式等问题。"
+msgstr "When a sentence contains terms, you can select the corresponding texts in the source and the translation to add terms. BasicCAT uses opennlp to lemmatize words. So, if you add a term in its plural form, BasicCAT can detect its singular form in another segment."
+
+
+#: ../../source/gettingstarted.rst:71
+msgid "考虑到导入的外部术语库可能有上万条内容，为了优化匹配的速度，采用的HashMap的算法，只能对要翻译的原文进行词型还原。所以平时添加术语最好还是添加原形，方便导入其它项目。"
+msgstr "As an external term database may contains thousands of entries, BasicCAT uses a HashMap algorithm to match terms. Only the text in the source will be lemmatized. Terms in external termbases will not be lemmatized. So when adding a term, it is better to add in its original form."
+
+
+#: ../../source/gettingstarted.rst:73
+msgid "术语的导入和翻译记忆的导入类似，支持的文件类型是TBX和Tab分割的TXT文件。"
+msgstr "Importing terms is much the same as importing translation memory. TBX and tab-delimited txt files are supported."
+
+
+#: ../../source/gettingstarted.rst:75
+msgid "术语的管理界面也和翻译记忆的类似，不同之处在于术语可以添加标签和备注进行管理。"
+msgstr "Term manager is also similar to TM manager. The difference lies in that tags and notes can be added for terms."
+
+
+#: ../../source/gettingstarted.rst:80
+msgid "片段操作"
+msgstr "Segments Manipulation"
+
+
+#: ../../source/gettingstarted.rst:82
+msgid "BasicCAT利用SRX分割标准对原文进行分割。片段多为一个句子或者一个单独成段的短语。"
+msgstr "BasicCAT uses the SRX segmentation standard to segment the text. A segment can be a sentence or a phrase."
+
+
+#: ../../source/gettingstarted.rst:85
+msgid "片段合并与分割"
+msgstr "Merge and Split Segments"
+
+
+#: ../../source/gettingstarted.rst:87
+msgid "遇到下图这样的人名分割错误的情况，我们可以点击原文的末尾，然后按Delete键进行句段合并操作。"
+msgstr "If you come across a wrongly segmented name like below, you can move the cursor to the end and press "Delete" to merge the two segments."
+
+
+#: ../../source/gettingstarted.rst:91
+msgid "如果句段属于不同的文件或者翻译单元，将不能进行合并。word中的不同段落，indesign中不同的story文件都属于这种情况。"
+msgstr "If two segments belong to different files or translation units, they cannot be merged. Different paragraphs in Word and different stories in InDesign belong to such case."
+
+
+#: ../../source/gettingstarted.rst:95
+msgid "BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的片段带标签，也会进行提示。此时可以选择继续进行合并，但可能会显示出较为复杂的标签。"
+msgstr "BasicCAT hides format tags when possible. So if segments contain hidden tags, there will be a message box as below. You can choose to continue, and the merged source text may contains complex tags."
+
+
+#: ../../source/gettingstarted.rst:99
+msgid "遇到下图这样需要在分号处进行分割的片段，将光标定位到分号前，按Enter键进行分割。"
+msgstr "When you need to split, like at the semicolon below, move the cursor to the semicolon and press "Enter"."
+
+
+#: ../../source/gettingstarted.rst:104
+msgid "设置不可译片段"
+msgstr "Mark non-translatable segments"
+
+
+#: ../../source/gettingstarted.rst:106
+msgid ""
+"英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark"
+" the current segment as non-translatble进行设置。"
+msgstr "When doing English to Chinese translation, it is common that the first segment and the second one have similar meanings. You can mark the first one as non-translatable and only translate the second one. When generating target files, non-translatable segments will be omitted. Use Menu Edit->Mark the current segment as non-translatable to do this."
+
+
+#: ../../source/gettingstarted.rst:110
+msgid "设置不可译的片段的编辑区会变成灰色不可用状态。"
+msgstr "Textarea for non-translatable segments will be gray and not editable."
+
+
+#: ../../source/gettingstarted.rst:115
+msgid "添加备注"
+msgstr "Add notes"
+
+
+#: ../../source/gettingstarted.rst:117
+msgid ""
+"翻译中碰到较难的句子，可以进行备注，记录为什么这样翻。点击菜单栏Edit->Show/Edit notes of the current "
+"segment进行查看或修改操作。"
+msgstr "If you come across difficult sentences, you can make notes on how you get the translation done. Use Menu Edit->Show/Edit notes of the current segment to view or edit notes."
+
+
+#: ../../source/gettingstarted.rst:121
+msgid "含有备注的片段的译文编辑框会显示一圈绿色。"
+msgstr "Segments containing notes will have textarea with gray border."
+
+
+#: ../../source/gettingstarted.rst:126
+msgid "查看项目统计信息"
+msgstr "Statistics"
+
+
+#: ../../source/gettingstarted.rst:128
+msgid "点击项目区的Statistics，可以显示项目的统计信息，比如原文字数、译文字数和完成的百分比等。"
+msgstr "Click "Statistics" in the project area, you can see the statistics like words number and percentage completed."
+
+
+#: ../../source/gettingstarted.rst:133
+msgid "查看预览"
+msgstr "Preview"
+
+
+#: ../../source/gettingstarted.rst:135
+msgid "点击项目区的Preview，可以对翻译的内容进行预览。已经翻译的部分会用译文进行替代。"
+msgstr "Click "Preview" in the project area to preview the text. Translated source text will be replaced by translation."
+
+
+#: ../../source/gettingstarted.rst:140
+msgid "生成目标文件"
+msgstr "Generate target files"
+
+
+#: ../../source/gettingstarted.rst:142
+msgid "翻译结束后，点击菜单File->Generate target files，即可在项目的target文件夹里生成目标文件。"
+msgstr "When translation is done, use menu "File->Generate target files" to create translated files in the target folder."
+
+

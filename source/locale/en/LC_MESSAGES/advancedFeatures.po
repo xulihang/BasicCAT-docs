@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/advancedFeatures.rst:2
+msgid "进阶操作"
+msgstr "Advanced Features"
+
+
+#: ../../source/advancedFeatures.rst:5
+msgid "机器翻译"
+msgstr "Machine Translation"
+
+
+#: ../../source/advancedFeatures.rst:7
+msgid "BasicCAT预置了以下7种机器翻译引擎的API的支持："
+msgstr "BasicCAT has a built-in support for 7 machine translation services:"
+
+
+#: ../../source/advancedFeatures.rst:9
+msgid "`百度 <http://api.fanyi.baidu.com/api/trans/product/prodinfo>`_"
+msgstr "`Baidu <http://api.fanyi.baidu.com/api/trans/product/prodinfo>`_"
+
+
+#: ../../source/advancedFeatures.rst:10
+msgid "`谷歌 <https://cloud.google.com/translate/>`_"
+msgstr "`Google <https://cloud.google.com/translate/>`_"
+
+
+#: ../../source/advancedFeatures.rst:11
+msgid ""
+"`微软必应 <https://azure.microsoft.com/services/cognitive-services"
+"/translator-text-api/>`_"
+msgstr "`Microsoft Bing <https://azure.microsoft.com/services/cognitive-services/translator-text-api/>`_"
+
+
+#: ../../source/advancedFeatures.rst:12
+msgid "`小牛 <https://niutrans.vip/index/niutrans/index.html>`_"
+msgstr "`Niutrans <https://niutrans.vip/index/niutrans/index.html>`_"
+
+
+#: ../../source/advancedFeatures.rst:13
+msgid "`有道 <http://ai.youdao.com/>`_"
+msgstr "`Youdao <http://ai.youdao.com/>`_"
+
+
+#: ../../source/advancedFeatures.rst:14
+msgid "`Yandex <https://tech.yandex.com/translate/>`_"
+msgstr "`Yandex <https://tech.yandex.com/translate/>`_"
+
+
+#: ../../source/advancedFeatures.rst:15
+msgid "`MyMemory <https://mymemory.translated.net/doc/spec.php>`_"
+msgstr "`MyMemory <https://mymemory.translated.net/doc/spec.php>`_"
+
+
+#: ../../source/advancedFeatures.rst:17
+msgid "调用结果如下图。"
+msgstr "The result will show in the lower area."
+
+
+#: ../../source/advancedFeatures.rst:21
+msgid "您需要申请翻译API以实现调用，每个机器翻译申请的链接已经附在上面的列表中，其中MyMemory只需要配置一个email地址即可使用。划词检索和自动完成功能需要至少配置一个机器翻译才能使用。"
+msgstr "You have to apply for API keys to use these translation services. Links to apply have been included in the MT list above. MyMemory does not require API key and only needs to give an email address. You need to set up at least one machine translation to use selecting words to get meanings and autocomplete functions."
+
+
+#: ../../source/advancedFeatures.rst:23
+msgid "点击菜单Options->Preferences进入设置界面，选择Machine Translation进行翻译API的配置。"
+msgstr "Use Menu "Options->Preferences" to enter the setup interface."
+
+
+#: ../../source/advancedFeatures.rst:29
+msgid "机器翻译的API服务都有使用限制，百度和微软每个月200万词免费额度；MyMemory每天10000词；Yandex每天1百万词，每月不超1千万词。其它需要付费使用，小牛和有道注册时会附赠百万词的额度。"
+msgstr "These translation services have usage limits. Baidu and Bing have a 2million limit per month; MyMemory has a limit of 10,000 words per day; Yandex has a limit of 1million words per day and 10million words per month. Other services are paid services. Niutrans and youdao will give away 1million words upon registry."
+
+
+#: ../../source/advancedFeatures.rst:33
+msgid "预翻译"
+msgstr "Pre-translate"
+
+
+#: ../../source/advancedFeatures.rst:35
+msgid ""
+"预翻译指利用翻译记忆或者机器翻译预先对全文进行翻译。点击菜单Project->Pre-"
+"translate打开对话框，选择使用翻译记忆或者机器翻译进行预翻译。可以设置翻译记忆的最低匹配率和选择使用哪个机器翻译引擎。"
+msgstr "You can use translation memory or machine translation to pre-translate the whole text. Use Menu "Project->Pre-translate" to open the dialog and choose TM or MT to do this. You can set the lowest match rate and which machine translation service to use."
+
+
+#: ../../source/advancedFeatures.rst:43
+msgid "划词取义"
+msgstr "Select words to get meanings."
+
+
+#: ../../source/advancedFeatures.rst:45
+msgid "利用机器翻译和在线词典API，BasicCAT提供划词检索功能。在原文中选中需要检索的部分，可以显示机器翻译或者在线词典的内容。需要在设置中勾选这一功能，并配置至少一个机器翻译。"
+msgstr "BasicCAT can show the meanings of selected text based on machine translation and online dictionary. You need to check this function in settings and enable at least one machine translation service."
+
+
+#: ../../source/advancedFeatures.rst:49
+msgid "点击出现的下拉框中的项目可以把结果添加到译文输入框。"
+msgstr "You can fill the result to the translation textarea by clicking the item in the dropdown list."
+
+
+#: ../../source/advancedFeatures.rst:52
+msgid "在线词典"
+msgstr "Online Dictionary"
+
+
+#: ../../source/advancedFeatures.rst:54
+msgid "因为离线词典往往具有版权问题，所以BasicCAT选择了集成在线词典。"
+msgstr "BasicCAT integrates online dictionaries as offline dictionaries have copyright issues."
+
+
+#: ../../source/advancedFeatures.rst:56
+msgid ""
+"在原文中选中一个单词后，点击菜单Edit->Show online dictionary "
+"dropdown，或者使用快捷键Ctrl+D，会出现包含一串在线词典名字的下拉列表。点击后会打开一个浏览窗口。"
+msgstr "Select a word in the source text and click menu "Edit->Show online dictionary dropdown" or use shortcut key CTRL+D. A dropdown list of online dictionary names will appear. A browse window will be opened."
+
+
+#: ../../source/advancedFeatures.rst:64
+msgid "选中想输入的释义后，按Add Selected可以填充进译文输入框。按Open in browser可以使用本地浏览器访问该页面。"
+msgstr "Use "Add Selected" Button to fill selected text in the browser to the translation textarea. Press "Open in browser" to open the page in local browsers."
+
+
+#: ../../source/advancedFeatures.rst:67
+msgid "语言检查"
+msgstr "Language Check"
+
+
+#: ../../source/advancedFeatures.rst:69
+msgid ""
+"BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ "
+"作为语言检查的后端。Language Tool是一款开源的拼写和语法检查器。"
+msgstr "BasicCAT uses `Language Tool <https://www.languagetool.org/>`_  to check language errors. Language Tool is an open source spelling and grammar checker."
+
+
+#: ../../source/advancedFeatures.rst:71
+msgid "在一个片段翻译完成，按下回车切换到下一片段后，会对上一片段进行检查。如果有错误，会在下方的功能区进行提示，并在输入框位置显示一个备选正确内容的下拉列表。点击功能区的replacement项目或者下拉列表的项目可以替换译文中的错误为正确的内容。"
+msgstr "When a segment is translated and you press "Enter" to switch to the next one, it will check the previous segment. Errors will be shown in the lower area. A dropdown list containing the possible corrections will also be shown below the translation textarea. By clicking the replacement item in the lower area or the dropdown list item, the mistakes will be replaced to the right one."
+
+
+#: ../../source/advancedFeatures.rst:75
+msgid "要使用语言检查，你需要先下载LanguageTool。"
+msgstr "To use language check, you need to download languagetool first."
+
+
+#: ../../source/advancedFeatures.rst:77
+msgid ""
+"`LanguageTool 4.3 下载 "
+"<https://www.languagetool.org/download/LanguageTool-4.3.zip>`_"
+msgstr " `LanguageTool 4.3 Download <https://www.languagetool.org/download/LanguageTool-4.3.zip>`_"
+
+
+#: ../../source/advancedFeatures.rst:79
+msgid ""
+"下载后解压至任意位置，然后打开BasicCAT，点击菜单Tools->Server Launcher，打开服务启动器的窗口"
+"，选择存放languagetool-server.jar这一文件的文件夹。然后点击Start LanguageTool "
+"Server的按钮后可以在本地运行LanguageTool的离线服务。"
+msgstr "Unzip the downloaded, open BasicCAT, click menu "Tools->Server Launcher", and you can setup the path to the folder containing the file named languagetool-server.jar. Press "Start LanguageTool Server" to run the server locally."
+
+
+#: ../../source/advancedFeatures.rst:83
+#, python-format
+msgid ""
+"可以用浏览器访问 `<http://127.0.0.1:8081/v2/check?text=a%20example&language=en-"
+"US>`_ 来判断服务是否运行。"
+msgstr "You can visit `<http://127.0.0.1:8081/v2/check?text=a%20example&language=en-US>`_ to check whether the server is running."
+
+
+#: ../../source/advancedFeatures.rst:85
+msgid "除此之外，你还要设置启用语言检查。点击菜单Options->Preferences，进入Language Check页面，勾选启用语言检查。"
+msgstr "In addition, you need to check the "enable language tool" checkbox in settings. "
+
+
+#: ../../source/advancedFeatures.rst:89
+msgid "如果你想使用运行在远程服务器的LanguageTool，可以通过修改链接来调用。"
+msgstr "You can change the link to use Language Tool running on a remote server."
+
+
+#: ../../source/advancedFeatures.rst:93
+msgid "自动完成（交互式机器翻译）"
+msgstr "Autocomplete (Interactive Machine Translation)"
+
+
+#: ../../source/advancedFeatures.rst:95
+msgid "自动完成对原文进行分词，并利用斯坦福自然语言处理工具进行句法分析，提取短语，所得的片段利用机器翻译进行翻译，如果在翻译过程中输入的字是某个片段的开头，那这一片段的译文会以下拉列表的形式供用户选择是否使用。"
+msgstr "Here is how autocomplete works: The source text is tokenized and parsed using Stanford NLP Tools. Then, words and phrases will be extracted and get machine translated. The results will be stored in the memory. When the user inputs a word that match the beginning of these segments, a dropdown list containing matched translation suggestions will show."
+
+
+#: ../../source/advancedFeatures.rst:99
+msgid "对于汉译英，还可以用于快速输入英文单词。"
+msgstr "As for Chinese to English translation, it can also be used to input English words quickly."
+
+
+#: ../../source/advancedFeatures.rst:103
+msgid "要使用自动完成，需要下载斯坦福自然语言处理软件。"
+msgstr "To use autocomplete, Stanford CoreNLP is needed."
+
+
+#: ../../source/advancedFeatures.rst:105
+msgid "官网地址：https://stanfordnlp.github.io/CoreNLP/index.html"
+msgstr "Stanford CoreNLP Homepage: https://stanfordnlp.github.io/CoreNLP/index.html"
+
+
+#: ../../source/advancedFeatures.rst:107
+msgid "百度网盘（备用）：https://pan.baidu.com/s/1LNW4IDw8Viz6RURmzqxI9Q"
+msgstr "BaiduNetdisk (backup download): https://pan.baidu.com/s/1LNW4IDw8Viz6RURmzqxI9Q"
+
+
+#: ../../source/advancedFeatures.rst:109
+msgid ""
+"需要下载corenlp和中文的模型文件。下载完成后解压corenlp-"
+"full的zip文件到任意位置，把中文模型文件放入解压的目录，然后点菜单Tools->Server Launcher，选择文件夹位置后点Start"
+" CoreNLP Server按钮启动。"
+msgstr "CoreNLP and the Chinese model jar are needed. Unzip CoreNLP and put the Chinese model jar in the same folder. Use Server Launcher to start the server."
+
+
+#: ../../source/advancedFeatures.rst:111
+msgid "可以用浏览器访问 `<http://127.0.0.1:9000>`_ 来判断服务是否运行。"
+msgstr "Visit `<http://127.0.0.1:9000>`_ to see whether the server is running."
+
+
+#: ../../source/advancedFeatures.rst:113
+msgid ""
+"和Language "
+"Tool一样，还需要设置启用自动完成。点击菜单Options->Preferences，进入Autocomplete页面，勾选启用自动完成。"
+msgstr "Like setting Language Tool, you also need to check the "Enable Autocomplete" checkbox to use autocomplete."
+
+
+#: ../../source/advancedFeatures.rst:115
+msgid "如果想使用运行在远程服务器的corenlp，可以通过修改链接来调用。"
+msgstr "Change the link to use a remote server."
+
+
+#: ../../source/advancedFeatures.rst:118
+msgid "快速填充"
+msgstr "Quickfill"
+
+
+#: ../../source/advancedFeatures.rst:120
+msgid ""
+"翻译过程中我们常常需要输入特殊的符号，或者需要多次输入同一串文本。BasicCAT支持定义快速填充项目，在翻译时使用快捷键Ctrl+Q或者点击菜单Edit->Show"
+" quickfill dropdown来显示快捷输入用的下拉列表。如果匹配到术语，也可以设置包含进去。"
+msgstr "We often have to input special characters or the same text many times. BasicCAT supports quickfill. You can use the shortcut key CTRL+Q or click the menu "Edit-show quick fill dropdown" to display a dropdown list of quickfill items. Matched terms can also be included."
+
+
+#: ../../source/advancedFeatures.rst:124
+msgid "快速填充的设置需要点击菜单Project->Project Settings，切换到Quickfill栏目。"
+msgstr "Click menu "Project->Project Settings" to set up quickfill."
+
+
+#: ../../source/advancedFeatures.rst:129
+msgid "自动更正"
+msgstr "AutoCorrect"
+
+
+#: ../../source/advancedFeatures.rst:131
+msgid "自动更正是借鉴自Word的一项功能，可以检测输入的内容，对内容进行修正。比如英译汉时需要输入中文的标点符号，可以设置错误地输入英文标点符号时自动更正为中文标点。我们也可以用它来快速输入内容。比如rst是restructuredText的缩写，设置自动更正后，每次输入rst，内容就会自动变成restructuredText。"
+msgstr "AutoCorrect is inspired by Microsoft Word's function. It can detect the inputed text and correct spelling errors. For example, we need to input Chinese punctuations when doing an English to Chinese translation and autocorrect can replace English punctuations to Chinese punctuations. We can also use it to input content quickly. For example, "rst" is the abbreviation of "restructuredText". When AutoCorrect is setuped, we can input "rst" the get "restructuredText"."
+
+
+#: ../../source/advancedFeatures.rst:135
+msgid "点击菜单Project->Project Settings，切换到AutoCorrect栏目进行设置。"
+msgstr "Click menu "Project->Project Settings" to set up AutoCorrect."
+
+
+#: ../../source/advancedFeatures.rst:140
+msgid "导出Word以供审校"
+msgstr "Export Word for review"
+
+
+#: ../../source/advancedFeatures.rst:142
+msgid "BasicCAT支持导出翻译的内容至Word中，利用Word的审校功能进行审校。"
+msgstr "BasicCAT can export translated contents to docx files and use Word to review."
+
+
+#: ../../source/advancedFeatures.rst:144
+msgid "在所需导出的文件上右键，点击Export to docx for review，可以导出docx文件。"
+msgstr "Right click on the file and click "Export to docx for review" to export the docx file."
+
+
+#: ../../source/advancedFeatures.rst:150
+msgid "完成审校后，可以从Word文件将修改结果导回。在文件名上右键，点击Import form review。"
+msgstr "When the review is done, you can import the result back. Right click on the file and click "Import from review"."
+
+
+#: ../../source/advancedFeatures.rst:154
+msgid "你可以一条一条地重新确认，也可以直接用审校的内容替换原来的翻译。"
+msgstr "You can check the imported result one by one or replace the original translation with the review directly."
+
+
+#: ../../source/advancedFeatures.rst:159
+msgid "导出双语对照文本"
+msgstr "Exporting bilingual paragraph files"
+
+
+#: ../../source/advancedFeatures.rst:161
+msgid "在所需导出的文件上右键，点击Export to bi-paragraphs，可以导出双语段落对照文本。"
+msgstr "Right on the file, click "Export to bi-paragraphs" to do this."
+
+
+#: ../../source/advancedFeatures.rst:166
+msgid "搜索与替换"
+msgstr "Search and Replace"
+
+
+#: ../../source/advancedFeatures.rst:168
+msgid "点击菜单Edit->Search and Replace进入搜索与替换对话框，可以检索原文和译文的内容。支持使用正则表达式。"
+msgstr "Click menu "Edit->Search and Replace" to open the Search and Replace Dialog. You can search in the source or the target text. Regular expressions are supported."
+
+
+#: ../../source/advancedFeatures.rst:170
+msgid "下面是利用正则表达式将英文引号替换成中文引号的例子。"
+msgstr "Below is an example of replacing English quotation marks to Chinese quotation marks."
+
+
+#: ../../source/advancedFeatures.rst:174
+msgid ""
+"关于正则表达式，可以参考\\ `这里 <http://www.runoob.com/regexp/regexp-"
+"tutorial.html>`_\\ 的教程。"
+msgstr "You can learn more about regular expressions at this `website <http://www.runoob.com/regexp/regexp-tutorial.html>`_\ ."
+
+

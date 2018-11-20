@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/otherSettings.rst:2
+msgid "其它"
+msgstr "其它"
+
+
+#: ../../source/otherSettings.rst:5
+msgid "外观设置"
+msgstr "外观设置"
+
+
+#: ../../source/otherSettings.rst:7
+msgid "点击菜单Options->Preferences进入设置窗口，点击左边的Appearence，可以进行外观方面的设置。"
+msgstr "点击菜单Options->Preferences进入设置窗口，点击左边的Appearence，可以进行外观方面的设置。"
+
+
+#: ../../source/otherSettings.rst:9
+msgid "目前仅支持设置编辑区的字体。"
+msgstr "目前仅支持设置编辑区的字体。"
+
+
+#: ../../source/otherSettings.rst:14
+msgid "自动备份"
+msgstr "自动备份"
+
+
+#: ../../source/otherSettings.rst:16
+msgid "BasicCAT支持自动备份，可以在设置界面设置间隔多少时间备份一次项目文件。备份的文件会保存在项目的bak文件夹里。"
+msgstr "BasicCAT支持自动备份，可以在设置界面设置间隔多少时间备份一次项目文件。备份的文件会保存在项目的bak文件夹里。"
+
+
+#: ../../source/otherSettings.rst:21
+msgid "使用Git进行版本控制"
+msgstr "使用Git进行版本控制"
+
+
+#: ../../source/otherSettings.rst:23
+msgid "BasicCAT自带的Git，支持每次执行保存时在项目文件夹执行一次git commit操作。"
+msgstr "BasicCAT自带的Git，支持每次执行保存时在项目文件夹执行一次git commit操作。"
+
+
+#: ../../source/otherSettings.rst:25
+msgid "可以在设置里设置执行git commit的用户信息。"
+msgstr "可以在设置里设置执行git commit的用户信息。"
+
+
+#: ../../source/otherSettings.rst:29
+msgid "安装Git后，在项目文件夹执行git show可以查看最新一次保存做了哪些修改。你也可以用git reset命令回退到之前的历史版本。"
+msgstr "安装Git后，在项目文件夹执行git show可以查看最新一次保存做了哪些修改。你也可以用git reset命令回退到之前的历史版本。"
+
+
+#: ../../source/otherSettings.rst:33
+msgid "更多功能可以通过安装Git桌面客户端来实现。"
+msgstr "更多功能可以通过安装Git桌面客户端来实现。"
+
+
+#: ../../source/otherSettings.rst:36
+msgid "管理插件"
+msgstr "管理插件"
+
+
+#: ../../source/otherSettings.rst:38
+msgid "BasicCAT目前支持开发机器翻译插件和文件过滤器插件。进入设置界面可以选择插件存放的文件夹，执行插件的增删操作。"
+msgstr "BasicCAT目前支持开发机器翻译插件和文件过滤器插件。进入设置界面可以选择插件存放的文件夹，执行插件的增删操作。"
+
+

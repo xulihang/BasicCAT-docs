@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-18 15:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/intro.rst:2
+msgid "简介"
+msgstr "Introduction"
+
+
+#: ../../source/intro.rst:4
+msgid "BasicCAT是一款开源的计算机辅助翻译软件，旨在为译员提供简单实用的翻译工具。取名BasicCAT，一是因为它简单易用，二是因为它使用Basic语言编写，普通人花上一段时间学习后也能掌握，从而在BasicCAT源代码的基础上修改出适合自己需要的软件。"
+msgstr "BasicCAT is an open source computer-aided translation tool, which aims at providing a simple and useful tool for translators. The name is BasicCAT, because its simplicity and its programming language—Basic. Basic is easy to learn and everyone can build a suitable CAT tool based on BasicCAT's source code."
+
+
+#: ../../source/intro.rst:6
+msgid "软件具有以下功能："
+msgstr "It has the following features:"
+
+
+#: ../../source/intro.rst:8
+msgid "翻译记忆"
+msgstr "Translation Memory"
+
+
+#: ../../source/intro.rst:9
+msgid "术语管理"
+msgstr "Terminology Management"
+
+
+#: ../../source/intro.rst:10
+msgid "语言检查"
+msgstr "Language Check"
+
+
+#: ../../source/intro.rst:11
+msgid "划词取义"
+msgstr "Select words to get meanings"
+
+
+#: ../../source/intro.rst:12
+msgid "快速填充"
+msgstr "Quickfill"
+
+
+#: ../../source/intro.rst:13
+msgid "自动更正"
+msgstr "AutoCorrect"
+
+
+#: ../../source/intro.rst:14
+msgid "交互式机器翻译"
+msgstr "Interactive Machine Translation"
+
+
+#: ../../source/intro.rst:15
+msgid "导出Word供外部审校"
+msgstr "Export Word for external review"
+
+
+#: ../../source/intro.rst:16
+msgid "导出双语段落对照文件"
+msgstr "Export bilingual paragraph files"
+
+
+#: ../../source/intro.rst:17
+msgid "句段分割与合并"
+msgstr "Merge and split segments freely"
+
+
+#: ../../source/intro.rst:18
+msgid "调用多种在线词典"
+msgstr "Online Dictionaries Integration"
+
+
+#: ../../source/intro.rst:19
+msgid "常见机器翻译服务的API调用"
+msgstr "Support Machine Translation Services Provided by Google, Microsoft, etc."
+
+
+#: ../../source/intro.rst:20
+msgid "支持利用翻译记忆与机器翻译进行全文预翻译"
+msgstr "Pretranslate based on translation memory and machine translation"
+
+
+#: ../../source/intro.rst:21
+msgid "支持常见源文件格式：txt, idml, xliff, gettext po"
+msgstr "Support  common file formats: TXT, idml, xliff, gettext Po"
+
+
+#: ../../source/intro.rst:22
+msgid "支持翻译记忆标准TMX、术语管理标准TBX和句段分割标准SRX"
+msgstr "Support three translation standards: TMX, TBX and SRX"
+
+
+#: ../../source/intro.rst:23
+msgid "使用Git进行版本控制"
+msgstr "Version Control using Git"
+
+
