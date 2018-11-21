@@ -96,7 +96,7 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 
 .. image:: /images/merge_segments_hidden_tags.png
 
-遇到下图这样需要在分号处进行分割的片段，将光标定位到分号前，按Enter键进行分割。
+遇到下图这样需要在分号处进行分割的片段，将光标定位到分号后，按Enter键进行分割。
 
 .. image:: /images/split_segments.png
 
