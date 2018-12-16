@@ -24,7 +24,7 @@ copyright = '2018, Xu Lihang'
 author = 'Xu Lihang'
 
 # The short X.Y version
-version = ''
+version = '1.2'
 # The full version, including alpha/beta/rc tags
 release = ''
 
