@@ -4,9 +4,13 @@
 新建项目
 -----------
 
-菜单栏点击File->New，选择建立英译汉(en to zh)或者汉译英(zh to en)项目，会自动生成翻译记忆库和术语库等项目文件。
+菜单栏点击File->New，选择建立英译汉(en to zh)、汉译英(zh to en)项目或者其它语言对的项目，会自动生成翻译记忆库和术语库等项目文件。
 
 .. image:: /images/new_project.png
+
+选择其它语言对时你也可以自己输入所需的遵循ISO639标准的语言代码，具体说明\ `见此 <http://www.basiccat.org/1-2-beta-has-multilanguage-support/>`_\ 。
+
+.. image:: /images/select_languagepair.png
 
 新建项目后要进一步操作需要先保存项目。
 
@@ -17,7 +21,7 @@
 
 .. image:: /images/project_area.png
 
-我们在Project Files上右键，可以添加文件。
+我们在Project Files上右键，可以添加文件或者添加文件夹。
 
 .. image:: /images/add_file.png
 
@@ -66,6 +70,10 @@ BasicCAT的翻译记忆库分为项目记忆库和外部记忆库。项目记忆
 在翻译过程中遇到术语，可以在原文和译文中选中对应的文本，然后点击术语区的Add Term添加术语。BasicCAT利用opennlp自然语言处理工具对词型进行还原，避免保存的是词语的复数形式而匹配不到词语的单数形式等问题。
 
 .. image:: /images/term_match.png
+
+在显示的术语条目上右键，可以查看更多信息和修改历史。
+
+.. image:: /images/term_more.png
 
 .. Attention::
     考虑到导入的外部术语库可能有上万条内容，为了优化匹配的速度，采用的HashMap的算法，只能对要翻译的原文进行词型还原。所以平时添加术语最好还是添加原形，方便导入其它项目。
@@ -121,6 +129,14 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 含有备注的片段的译文编辑框会显示一圈绿色。
 
 .. image:: /images/segment_with_note.png
+
+查看片段历史
++++++++++++++++++
+
+BasicCAT会记录片段的修改历史，点击菜单Edit->Show segment history即可查看历史，其中的用户名即版本控制设置中添加的用户名。
+
+.. image:: /images/history_viewer.png
+
 
 查看项目统计信息
 --------------------

@@ -4,7 +4,7 @@
 机器翻译
 ---------------
 
-BasicCAT预置了以下7种机器翻译引擎的API的支持：
+BasicCAT预置了以下9种机器翻译引擎的API的支持：
 
 * `百度 <http://api.fanyi.baidu.com/api/trans/product/prodinfo>`_
 * `谷歌 <https://cloud.google.com/translate/>`_
@@ -13,6 +13,8 @@ BasicCAT预置了以下7种机器翻译引擎的API的支持：
 * `有道 <http://ai.youdao.com/>`_
 * `Yandex <https://tech.yandex.com/translate/>`_
 * `MyMemory <https://mymemory.translated.net/doc/spec.php>`_
+* `搜狗 <http://ai.sogou.com/ai-docs/api/fanyi>`_
+* `腾讯翻译君 <https://ai.qq.com/doc/nlptrans.shtml>`_
 
 调用结果如下图。
 
@@ -62,6 +64,8 @@ BasicCAT预置了以下7种机器翻译引擎的API的支持：
 .. image:: /images/online_dictionary_form.png
 
 选中想输入的释义后，按Add Selected可以填充进译文输入框。按Open in browser可以使用本地浏览器访问该页面。
+
+你可以通过修改项目文件夹下的config文件夹里的dictList.txt添加其它在线词典。
 
 语言检查
 ---------------
@@ -141,9 +145,9 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 BasicCAT支持导出翻译的内容至Word中，利用Word的审校功能进行审校。
 
-在所需导出的文件上右键，点击Export to docx for review，可以导出docx文件。
+在所需导出的文件上右键，点击Export to->docx for review，可以导出docx文件。
 
-.. image:: /images/export_review.png
+.. image:: /images/export.png
 
 .. image:: /images/word_review.png
 
@@ -158,9 +162,17 @@ BasicCAT支持导出翻译的内容至Word中，利用Word的审校功能进行�
 导出双语对照文本
 -------------------
 
-在所需导出的文件上右键，点击Export to bi-paragraphs，可以导出双语段落对照文本。
+在所需导出的文件上右键，点击Export to->bi-paragraphs，可以导出双语段落对照文本。
 
-.. image:: /images/exported-bitext.png
+.. image:: /images/export.png
+
+导出带备注的Markdown文件
+---------------------------------
+
+和上一条操作办法相近，在所需导出的文件上右键，点击Export to->Markdown with notes，可以导出Markdown文件。
+
+Markdown文件可以使用\ `Pandoc <http://www.pandoc.org/>`_\ 进一步转换成Word文件。
+
 
 搜索与替换
 ---------------

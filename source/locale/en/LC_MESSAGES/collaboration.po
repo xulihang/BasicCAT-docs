@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Xu Lihang
+# This file is distributed under the same license as the BasicCAT
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicCAT Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-16 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/collaboration.rst:2
+msgid "团队协作"
+msgstr ""
+
+#: ../../source/collaboration.rst:5
+msgid "共享翻译记忆、术语"
+msgstr ""
+
+#: ../../source/collaboration.rst:7
+msgid "利用BasicCAT的服务器端程序，可以架设用于共享翻译记忆和术语的服务。该程序可以在BasicCAT的下载页面获取。"
+msgstr ""
+
+#: ../../source/collaboration.rst:9
+msgid "客户端需要进行相关设置，设置完成后即可实时共享翻译记忆与术语。"
+msgstr ""
+
+#: ../../source/collaboration.rst:13
+msgid "服务器程序运行的方法（需要安装java8以上版本）："
+msgstr ""
+
+#: ../../source/collaboration.rst:19
+msgid "你可以修改程序所在目录下key.txt来添加一个访问密钥。密钥目前只支持单行内容。"
+msgstr ""
+
+#: ../../source/collaboration.rst:22
+msgid "基于Git进行团队协作"
+msgstr ""
+
+#: ../../source/collaboration.rst:24
+msgid ""
+"BasicCAT可以在本地生成git仓库，添加remote uri和账号密码后即可把本地的记录上传到远程，并与其它用户进行协作。每次请求git "
+"push时，程序会自动从远程仓库获取最新的变动，并更新本地文件，然后将本地的修改进行上传。BasicCAT会根据片段修改的时间自动解决冲突，基本不会发生冲突的情况。"
+msgstr ""
+
+#: ../../source/collaboration.rst:26
+msgid "需要在项目设置里设置远程仓库地址并选择是否每次执行保存操作时把修改上传到远程仓库。你需要在偏好设置里先设置好git账户。"
+msgstr ""
+
+#: ../../source/collaboration.rst:30
+msgid "你也可以通过菜单手动进行git的相关操作。"
+msgstr ""
+
+#: ../../source/collaboration.rst:34
+msgid "基于Git的协作并不同步翻译记忆与术语，只同步工作文件。"
+msgstr ""
+
+#: ../../source/collaboration.rst:37
+msgid "GitHub操作示例"
+msgstr ""
+
+#: ../../source/collaboration.rst:39
+msgid "GitHub是一个流行的Git托管平台，我们可以基于它进行协作。"
+msgstr ""
+
+#: ../../source/collaboration.rst:41
+msgid "首先建立一个空的仓库："
+msgstr ""
+
+#: ../../source/collaboration.rst:47
+msgid "进入以下设置界面："
+msgstr ""
+
+#: ../../source/collaboration.rst:51
+msgid "之后用BasicCAT打开一个项目，在项目设置-团队协作里设置远程仓库。"
+msgstr ""
+
+#: ../../source/collaboration.rst:55
+msgid "之后将这个项目分发给其它用户即可。"
+msgstr ""
+
+#: ../../source/collaboration.rst:57
+msgid "其它用户要想修改远程仓库，还需要获得push的权限。"
+msgstr ""
+
+#: ../../source/collaboration.rst:59
+msgid "进入GitHub的仓库设置，点击左边的Collaborators然后添加要添加的GitHub账户。"
+msgstr ""
+
+#: ../../source/collaboration.rst:63
+msgid "更多内容可以见GitHub的\\ `帮助文档 <https://help.github.com/>`_\\ 。"
+msgstr ""
+

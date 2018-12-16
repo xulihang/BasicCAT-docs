@@ -22,7 +22,7 @@ BasicCAT支持自动备份，可以在设置界面设置间隔多少时间备份
 
 BasicCAT自带的Git，支持每次执行保存时在项目文件夹执行一次git commit操作。
 
-可以在设置里设置执行git commit的用户信息。
+可以在设置里设置执行git commit的用户信息。如果要同步到远程仓库，还可以设置密码。
 
 .. image:: /images/git_setting.png
 

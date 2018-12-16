@@ -14,6 +14,7 @@ BasicCAT 使用手册
    gettingstarted.rst
    advancedFeatures.rst
    translatingFiles.rst
+   collaboration.rst
    otherSettings.rst
    howtocontribute.rst
 
