@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BasicCAT Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-16 14:54+0800\n"
+"POT-Creation-Date: 2019-01-04 12:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,64 +153,76 @@ msgid "遇到下图这样需要在分号处进行分割的片段，将光标定�
 msgstr ""
 
 #: ../../source/gettingstarted.rst:112
-msgid "设置不可译片段"
+msgid "忽略片段"
 msgstr ""
 
 #: ../../source/gettingstarted.rst:114
 msgid ""
-"英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark"
-" the current segment as non-translatble进行设置。"
+"英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以忽略前一片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark"
+" the current segment as neglected进行设置。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:118
-msgid "设置不可译的片段的编辑区会变成灰色不可用状态。"
+#: ../../source/gettingstarted.rst:116
+msgid "设置忽略的片段的编辑区会变成灰色不可用状态。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:123
+#: ../../source/gettingstarted.rst:121
 msgid "添加备注"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:125
+#: ../../source/gettingstarted.rst:123
 msgid ""
 "翻译中碰到较难的句子，可以进行备注，记录为什么这样翻。点击菜单栏Edit->Show/Edit notes of the current "
 "segment进行查看或修改操作。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:129
+#: ../../source/gettingstarted.rst:127
 msgid "含有备注的片段的译文编辑框会显示一圈绿色。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:134
+#: ../../source/gettingstarted.rst:132
 msgid "查看片段历史"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:136
+#: ../../source/gettingstarted.rst:134
 msgid ""
 "BasicCAT会记录片段的修改历史，点击菜单Edit->Show segment "
 "history即可查看历史，其中的用户名即版本控制设置中添加的用户名。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:142
+#: ../../source/gettingstarted.rst:140
 msgid "查看项目统计信息"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:144
+#: ../../source/gettingstarted.rst:142
 msgid "点击项目区的Statistics，可以显示项目的统计信息，比如原文字数、译文字数和完成的百分比等。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:149
+#: ../../source/gettingstarted.rst:147
 msgid "查看预览"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:151
+#: ../../source/gettingstarted.rst:149
 msgid "点击项目区的Preview，可以对翻译的内容进行预览。已经翻译的部分会用译文进行替代。"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:156
+#: ../../source/gettingstarted.rst:154
 msgid "生成目标文件"
 msgstr ""
 
-#: ../../source/gettingstarted.rst:158
+#: ../../source/gettingstarted.rst:156
 msgid "翻译结束后，点击菜单File->Generate target files，即可在项目的target文件夹里生成目标文件。"
 msgstr ""
+
+#~ msgid "设置不可译片段"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark"
+#~ " the current segment as non-"
+#~ "translatble进行设置。"
+#~ msgstr ""
+
+#~ msgid "设置不可译的片段的编辑区会变成灰色不可用状态。"
+#~ msgstr ""
 

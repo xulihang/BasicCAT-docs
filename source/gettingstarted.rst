@@ -108,16 +108,14 @@ BasicCAT对不需要显示的格式标签进行了隐藏处理，如果合并的
 
 .. image:: /images/split_segments.png
 
-设置不可译片段
+忽略片段
 +++++++++++++++
 
-英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以设置前一片段为不可译片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark the current segment as non-translatble进行设置。
+英译汉时常碰到前一片段和后一片段意思有重复，只需翻译后一片段的情况。这时可以忽略前一片段。这样，生成译文时会自动忽略这一片段。可以通过点击菜单Edit->Mark the current segment as neglected进行设置。
 
-.. image:: /images/mark_translateble.png
+设置忽略的片段的编辑区会变成灰色不可用状态。
 
-设置不可译的片段的编辑区会变成灰色不可用状态。
-
-.. image:: /images/mark_translateble_example.png
+.. image:: /images/mark_neglected_example.png
 
 添加备注
 +++++++++++++

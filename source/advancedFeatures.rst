@@ -4,7 +4,7 @@
 机器翻译
 ---------------
 
-BasicCAT预置了以下9种机器翻译引擎的API的支持：
+BasicCAT预置了以下11种机器翻译引擎的API的支持：
 
 * `百度 <http://api.fanyi.baidu.com/api/trans/product/prodinfo>`_
 * `谷歌 <https://cloud.google.com/translate/>`_
@@ -13,8 +13,12 @@ BasicCAT预置了以下9种机器翻译引擎的API的支持：
 * `有道 <http://ai.youdao.com/>`_
 * `Yandex <https://tech.yandex.com/translate/>`_
 * `MyMemory <https://mymemory.translated.net/doc/spec.php>`_
-* `搜狗 <http://ai.sogou.com/ai-docs/api/fanyi>`_
+* `搜狗（旧版免费接口） <http://ai.sogou.com/ai-docs/api/fanyi>`_
+* `搜狗深智 <https://deepi.sogou.com/>`_
 * `腾讯翻译君 <https://ai.qq.com/doc/nlptrans.shtml>`_
+* `IBM Watson <https://www.ibm.com/watson/services/language-translator/>`_
+* `亚马逊 <https://aws.amazon.com/translate/>`_
+
 
 调用结果如下图。
 
