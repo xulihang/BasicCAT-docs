@@ -69,7 +69,7 @@ msgid "`搜狗深智 <https://deepi.sogou.com/>`_"
 msgstr ""
 
 #: ../../source/advancedFeatures.rst:18
-msgid "`腾讯翻译君 <https://ai.qq.com/doc/nlptrans.shtml>`_"
+msgid "`腾讯云翻译 <https://cloud.tencent.com/product/tmt>`_"
 msgstr ""
 
 #: ../../source/advancedFeatures.rst:19

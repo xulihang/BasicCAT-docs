@@ -15,7 +15,7 @@ BasicCAT预置了以下11种机器翻译引擎的API的支持：
 * `MyMemory <https://mymemory.translated.net/doc/spec.php>`_
 * `搜狗（旧版免费接口） <http://ai.sogou.com/ai-docs/api/fanyi>`_
 * `搜狗深智 <https://deepi.sogou.com/>`_
-* `腾讯翻译君 <https://ai.qq.com/doc/nlptrans.shtml>`_
+* `腾讯云翻译 <https://cloud.tencent.com/product/tmt>`_
 * `IBM Watson <https://www.ibm.com/watson/services/language-translator/>`_
 * `亚马逊 <https://aws.amazon.com/translate/>`_
 
