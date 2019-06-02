@@ -195,7 +195,7 @@ msgstr "To use language check, you can either use the API provided by LanguageTo
 msgid ""
 "`LanguageTool 4.3 下载 "
 "<https://www.languagetool.org/download/LanguageTool-4.3.zip>`_"
-msgstr " `LanguageTool 4.3 Download <https://www.languagetool.org/download/LanguageTool-4.3.zip>`_"
+msgstr "`LanguageTool 4.3 Download <https://www.languagetool.org/download/LanguageTool-4.3.zip>`_"
 
 
 #: ../../source/advancedFeatures.rst:87
