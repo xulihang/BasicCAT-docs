@@ -4,7 +4,7 @@
 机器翻译
 ---------------
 
-BasicCAT预置了以下11种机器翻译引擎的API的支持：
+BasicCAT预置了以下12种机器翻译引擎的API的支持：
 
 * `百度 <http://api.fanyi.baidu.com/api/trans/product/prodinfo>`_
 * `谷歌 <https://cloud.google.com/translate/>`_
@@ -80,7 +80,7 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 .. image:: /images/languagecheck.png
 
-要使用语言检查，你需要先下载LanguageTool。
+要使用语言检查，你可以选择直接使用LanguageTool的API（默认地址：https://languagetool.org/api/v2/check），或者下载LanguageTool后在本地运行。
 
 `LanguageTool 4.3 下载 <https://www.languagetool.org/download/LanguageTool-4.3.zip>`_
 
@@ -94,7 +94,7 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 
 .. image:: /images/lauguagecheck_setting.png
 
-如果你想使用运行在远程服务器的LanguageTool，可以通过修改链接来调用。
+你还可以设置每次以下拉列表形式给出建议的最大数量，以免有的时候显示的建议太多。
 
 
 自动完成（交互式机器翻译）
@@ -121,6 +121,8 @@ BasicCAT利用 `Language Tool <https://www.languagetool.org/>`_ 作为语言检�
 和Language Tool一样，还需要设置启用自动完成。点击菜单Options->Preferences，进入Autocomplete页面，勾选启用自动完成。
 
 如果想使用运行在远程服务器的corenlp，可以通过修改链接来调用。
+
+你还可以设置每次以下拉列表形式给出建议的最大数量，以免有的时候显示的建议太多。
 
 快速填充
 ---------------
