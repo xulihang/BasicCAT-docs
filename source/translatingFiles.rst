@@ -251,26 +251,3 @@ Linux和macOS(homebrew)用户可以直接安装tesseract-ocr这个包，并下�
 `在此 <http://okapiframework.org/wiki/index.php?title=Filters>`_ 查看Okapi支持的文件格式。
 
 BasicCAT从1.5版开始集成了Okapi Tikal，可以自动将其它格式文件转换为XLIFF文件，并自动根据翻译好的XLIFF文件生成目标文件。不过，如果你需要修改Okapi处理某种格式时使用的参数，仍然需要使用Rainbow。
-
-利用Felix翻译Word文件
-------------------------------
-
-翻译Word文件，一种方法是通过okapi将word转换为xliff来进行翻译。而另一种方式则是使用Felix CAT。
-
-Felix是微软Office上运行的一套宏，可以在Word中利用翻译记忆完成翻译，一切操作都在Word中进行。
-
-关于felix的操作，可以访问\ `官网 <http://felix-cat.com/>`_\ 或者阅读这篇文章：`在Office里运行的CAT软件 <http://blog.xulihang.me/CAT-Tools-work-with-microsoft-office/>`_ 。
-
-下面讲讲如何利用BasicCAT翻译docx的文本，然后利用felix进行回填。
-
-1. 将Word转存为TXT，导入BasicCAT中翻译。
-2. BasicCAT里翻译好后导出翻译记忆，导入Felix。
-3. 通过Word的Felix加载项操作界面进入Felix的设置界面，取消勾选Format标签下的勾选框，这样替换纯文本的翻译记忆时，不会修改原文的格式。
-
-.. image:: /images/felix_menu.png
-
-.. image:: /images/felix_format.png
-
-4. 利用Alt+G快捷键，可以快速地进行译文的替换。
-
-.. image:: /images/felix.png
